@@ -1,0 +1,61 @@
+cmake_minimum_required(VERSION 2.8)
+
+ADD_DEFINITIONS(
+    -std=c++11 # Or -std=c++0x
+    # Other flags
+)
+
+set(binary_tree  binary_tree.h binary_tree_test.cpp )
+add_executable(binary_tree ${binary_tree} )
+
+
+set(linked_list  linked_list.h linked_list_test.cpp )
+add_executable(linked_list ${linked_list} )
+
+
+set(heap  heap.h heap_test.cpp )
+add_executable(heap ${heap} )
+
+
+set(graph  graph.h graph_test.cpp )
+add_executable(graph ${graph} )
+
+
+set(adj_matrix  graph.h adj_matrix_test.cpp )
+add_executable(adj_matrix ${adj_matrix} )
+
+
+set(adj_list  graph.h adj_list_test.cpp )
+add_executable(adj_list ${adj_list} )
+
+
+set(prim   prim.cpp )
+add_executable(prim ${prim} )
+
+
+set(kruskall   kruskall.cpp )
+add_executable(kruskall ${kruskall} )
+
+
+
+
+set(dijikstra   dijikstra.cpp )
+add_executable(dijikstra ${dijikstra} )
+
+set(dijikstra_adjlist   dijikstra_adjlist.cpp )
+add_executable(dijikstra_adjlist ${dijikstra_adjlist} )
+
+set(bellman_ford   bellman_ford.cpp )
+add_executable(bellman_ford ${bellman_ford} )
+
+
+set(DFS   DFS.cpp )
+add_executable(DFS ${DFS} )
+
+set(color   color.cpp )
+add_executable(color ${color} )
+
+
+set(topological_sort   topological_sort.cpp )
+add_executable(topological_sort ${topological_sort} )
+

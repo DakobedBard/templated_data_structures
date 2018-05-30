@@ -25,27 +25,77 @@ Do BFS and DFS on each of the implementations... write code to transition from o
 #include <vector>
 #include <unordered_map>
 #include <list>
-
+#include <stack>
 
 #define adj_V 5
 
 struct Edge{
 
-	int src, dest;
+	int src, dest ,weight;
 	Edge* edge;
 
-	Edge():src(0),dest(0){}
+	Edge():src(0),dest(0),weight(0){}
+	Edge(int s, int d, int w):src(s), dest(d), weight(w){}
+	
+	friend std::ostream & operator << (std::ostream &out, const Edge &h);
+	
 
 };
 
 
+std::ostream & operator << (std::ostream &out, const Edge &h)
+{
+    	out << "The edge between " << h.src << " and " << h.dest << "with a weight of " << h.weight;
 
+    	return out;
+}
+
+
+/*
+
+The basic implementation of a graph simply uses a set of edges
+
+
+*/
 class Graph{
 
-	int V,E;
   	Edge* edge;
+	int edge_count;
   public:
-	Graph(int V_, int E_):V(V_), E(E_){}
+	int NumVertices,E;
+	Graph(int V_, int E_):NumVertices(V_), E(E_){
+		edge = new Edge[E];
+		edge_count =0;
+	}
+	void insert_edge(int s, int d, int w){
+		
+		edge[edge_count].src = s;
+		edge[edge_count].dest = d;
+		edge[edge_count].weight = w;
+		edge_count++;	
+	}
+
+	int get_src(int j){
+		return edge[j].src;
+	}
+
+	int get_dest(int j){
+		return edge[j].dest;
+	}
+
+	int get_weight(int j){
+		return edge[j].weight;
+	}
+
+	void print(){
+		for(int i =0; i < edge_count; i++){
+
+			std::cout << edge[i] << std::endl;
+		}
+	}
+
+	void topoligicalSortUtil(int v, bool visited[], std::stack<int> &Stack);
+	void topoligicalSort();
 
 	
 
@@ -104,13 +154,15 @@ class AdjList_Graph{
 
 	int V;
 	std::unordered_map<int, GraphNode*> nodeList;
-
+	int edge_count;
   public:
 
 	AdjList_Graph(int V_) : V(V_){
 		for(int i =0; i < V_ ; i++){
 			nodeList[i] = new GraphNode(i);
 		}
+
+		edge_count = 0;
 	}
 	int getV(){
 		return V;
@@ -122,6 +174,10 @@ class AdjList_Graph{
 	std::unordered_map<int, GraphNode*> &return_nodelist(){
 		return nodeList;
 	}
+	int number_of_edges(){
+		return edge_count;
+	}
+
 	
 
 	void print(){
@@ -143,6 +199,41 @@ class AdjList_Graph{
 		GraphNode *node1 = nodeList[first_vertex];
 		GraphNode *node2 = nodeList[second_vertex];
 		node1->insert(second_vertex, w);
+		edge_count++;
+	}
+
+
+
+	/*
+
+Here is implementation of depth first search
+
+
+	*/
+	
+	// Recursive util;ity function... 
+	void DFS_Util(int v, bool visited[]){
+		visited[v] = true;
+		std::cout << v <<  " ";
+
+		// Recur for all vertices adjacent to this vertex.
+		GraphNode* node =nodeList[v];
+		std::vector<GraphNode::AdjListNode> list = node->return_adjlist(); 
+		for(int i =0; i < list.size(); i++){
+			if(!visited[list[i].dest]){
+				DFS_Util(list[i].dest, visited);
+			}
+		}
+
+	}
+
+	void DFS(int v){
+		bool *visited = new bool[V];
+		for(int i =0; i < V; i++){
+			visited[i] = false;
+		}
+		DFS_Util(v, visited);
+
 
 	}
 
@@ -150,6 +241,8 @@ class AdjList_Graph{
 
 	}
 
+
+	
 
 	/*
 
@@ -261,7 +354,18 @@ class AdjMatrix_Graph{
 		}
 	}
 
+	AdjMatrix_Graph(int **input_array, int V):adjMatrix(input_array), numVertices(V){
+	
+		
 
+
+	}
+
+
+	void construct_from_array(int** input_array){
+		
+	}
+	
 
 
 	int get_numVertices(){
@@ -275,7 +379,10 @@ class AdjMatrix_Graph{
 			for(int j=0; j < numVertices; j++){
 				std::cout << adjMatrix[i][j] << " ";
 			}
+			std::cout << std::endl;
 		}
+
+		
 	}
 
 	void addEdge(int i, int j, int w){
@@ -297,6 +404,9 @@ class AdjMatrix_Graph{
 
 
 };
+
+
+
 
 
 #endif

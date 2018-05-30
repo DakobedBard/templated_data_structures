@@ -1,0 +1,44 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/mddarr/aptitude/data_structures/template_data_structures/bellman_ford.cpp
+shortest_path.h
+/home/mddarr/aptitude/data_structures/template_data_structures/shortest_path.h
+
+/home/mddarr/aptitude/data_structures/template_data_structures/graph.h
+iostream
+-
+vector
+-
+unordered_map
+-
+list
+-
+stack
+-
+
+/home/mddarr/aptitude/data_structures/template_data_structures/heap.h
+vector
+-
+climits
+-
+iostream
+-
+
+/home/mddarr/aptitude/data_structures/template_data_structures/shortest_path.h
+graph.h
+/home/mddarr/aptitude/data_structures/template_data_structures/graph.h
+limits.h
+-
+heap.h
+/home/mddarr/aptitude/data_structures/template_data_structures/heap.h
+unordered_map
+-
+iostream
+-
+

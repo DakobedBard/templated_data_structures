@@ -1,32 +1,6 @@
 
 #include "shortest_path.h"
 
-int main2(){
-
-	int graph[9][9] = {{0, 4, 0, 0, 0, 0, 0, 8, 0},
-                      {4, 0, 8, 0, 0, 0, 0, 11, 0},
-                      {0, 8, 0, 7, 0, 4, 0, 0, 2},
-                      {0, 0, 7, 0, 9, 14, 0, 0, 0},
-                      {0, 0, 0, 9, 0, 10, 0, 0, 0},
-                      {0, 0, 4, 14, 10, 0, 2, 0, 0},
-                      {0, 0, 0, 0, 0, 2, 0, 1, 6},
-                      {8, 11, 0, 0, 0, 0, 1, 0, 7},
-                      {0, 0, 2, 0, 0, 0, 6, 7, 0}
-                     };
-
-	int graph2[3][3] = 	{{0,1,0},
-			  	{0,0,2},
-				{0,0,0} 
-
-
-	};
-
-	
-  	//adjmatrix_dijikstra(graph2, 0);
-	//dijkstra(graph,0);
-
-}	
-
 
 // A C++ program for Dijkstra's single source shortest path algorithm.
 // The program is for adjacency matrix representation of the graph
@@ -97,10 +71,10 @@ void dijkstra(int graph[V2][V2], int src)
 }
   
 // driver program to test above function
-int main()
+/*int main()
 {
-   /* Let us create the example graph discussed above */
-   int graph[V2][V2] = {{0, 4, 0, 0, 0, 0, 0, 8, 0},
+   /* Let us create the example graph discussed above *//*
+   int graph[9][9] = {{0, 4, 0, 0, 0, 0, 0, 8, 0},
                       {4, 0, 8, 0, 0, 0, 0, 11, 0},
                       {0, 8, 0, 7, 0, 4, 0, 0, 2},
                       {0, 0, 7, 0, 9, 14, 0, 0, 0},
@@ -112,16 +86,72 @@ int main()
                      };
   
 
-
-	int graph2[V][V] = 	{{0,1,0,0},
-			  	{0,0,2,0},
-				{0,0,0,5},
-				{0,0,0,0} 
-
-
 	};
+	*///AdjMatrix_Graph graph(9);
 
-    dijkstra(graph, 0);
-  
-    return 0;
+	//int ** graph_ptr = (int**)malloc(sizeof(int *)*9);
+/*
+	for(int i =0; i < 9; i++)
+		graph_ptr[i] = (int *)malloc(sizeof(int) 9);
+
+	// Copy the matrix 
+
+	for(int i=9; i < 9; i++){
+		for(int j=0; j < 9; j++){
+
+			graph_ptr[i][j] = graph[i][j];
+		}
+	}
+
+*/
+	
+  //  return 0;
+/*}
+
+
+*/
+
+
+int main(){
+	 int graph[9][9] = {{0, 4, 0, 0, 0, 0, 0, 8, 0},
+                      {4, 0, 8, 0, 0, 0, 0, 11, 0},
+                      {0, 8, 0, 7, 0, 4, 0, 0, 2},
+                      {0, 0, 7, 0, 9, 14, 0, 0, 0},
+                      {0, 0, 0, 9, 0, 10, 0, 0, 0},
+                      {0, 0, 4, 14, 10, 0, 2, 0, 0},
+                      {0, 0, 0, 0, 0, 2, 0, 1, 6},
+                      {8, 11, 0, 0, 0, 0, 1, 0, 7},
+                      {0, 0, 2, 0, 0, 0, 6, 7, 0}
+                     };
+
+
+	int ** graph_ptr = (int**)malloc(sizeof(int *)*9);
+
+	// Lets make a free function in graph
+
+
+	/*
+
+
+	*/
+
+
+	for(int i =0; i < 9; i++){
+		graph_ptr[i] = (int *)malloc(sizeof(int)*9);
+		//std::cout << " i get called on i :" << i <<std::endl;
+	}
+	// Copy the matrix 
+
+
+	for(int k=0; k < 9; k++){
+		for(int j =0; j<9; j++){
+			graph_ptr[k][j] = graph[k][j];
+		}
+	}
+
+
+	AdjMatrix_Graph adj_mat(graph_ptr, 9);
+	adj_mat.print();
+	return 0;
+
 }

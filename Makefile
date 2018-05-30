@@ -111,58 +111,6 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named heap
-
-# Build rule for target.
-heap: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 heap
-.PHONY : heap
-
-# fast build rule for target.
-heap/fast:
-	$(MAKE) -f CMakeFiles/heap.dir/build.make CMakeFiles/heap.dir/build
-.PHONY : heap/fast
-
-#=============================================================================
-# Target rules for targets named graph
-
-# Build rule for target.
-graph: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 graph
-.PHONY : graph
-
-# fast build rule for target.
-graph/fast:
-	$(MAKE) -f CMakeFiles/graph.dir/build.make CMakeFiles/graph.dir/build
-.PHONY : graph/fast
-
-#=============================================================================
-# Target rules for targets named adj_list
-
-# Build rule for target.
-adj_list: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 adj_list
-.PHONY : adj_list
-
-# fast build rule for target.
-adj_list/fast:
-	$(MAKE) -f CMakeFiles/adj_list.dir/build.make CMakeFiles/adj_list.dir/build
-.PHONY : adj_list/fast
-
-#=============================================================================
-# Target rules for targets named linked_list
-
-# Build rule for target.
-linked_list: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 linked_list
-.PHONY : linked_list
-
-# fast build rule for target.
-linked_list/fast:
-	$(MAKE) -f CMakeFiles/linked_list.dir/build.make CMakeFiles/linked_list.dir/build
-.PHONY : linked_list/fast
-
-#=============================================================================
 # Target rules for targets named dijikstra
 
 # Build rule for target.
@@ -176,150 +124,70 @@ dijikstra/fast:
 .PHONY : dijikstra/fast
 
 #=============================================================================
-# Target rules for targets named prim
+# Target rules for targets named topological_sort
 
 # Build rule for target.
-prim: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 prim
-.PHONY : prim
+topological_sort: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 topological_sort
+.PHONY : topological_sort
 
 # fast build rule for target.
-prim/fast:
-	$(MAKE) -f CMakeFiles/prim.dir/build.make CMakeFiles/prim.dir/build
-.PHONY : prim/fast
+topological_sort/fast:
+	$(MAKE) -f CMakeFiles/topological_sort.dir/build.make CMakeFiles/topological_sort.dir/build
+.PHONY : topological_sort/fast
 
 #=============================================================================
-# Target rules for targets named binary_tree
+# Target rules for targets named color
 
 # Build rule for target.
-binary_tree: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 binary_tree
-.PHONY : binary_tree
+color: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 color
+.PHONY : color
 
 # fast build rule for target.
-binary_tree/fast:
-	$(MAKE) -f CMakeFiles/binary_tree.dir/build.make CMakeFiles/binary_tree.dir/build
-.PHONY : binary_tree/fast
+color/fast:
+	$(MAKE) -f CMakeFiles/color.dir/build.make CMakeFiles/color.dir/build
+.PHONY : color/fast
 
 #=============================================================================
-# Target rules for targets named adj_matrix
+# Target rules for targets named stack_test
 
 # Build rule for target.
-adj_matrix: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 adj_matrix
-.PHONY : adj_matrix
+stack_test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 stack_test
+.PHONY : stack_test
 
 # fast build rule for target.
-adj_matrix/fast:
-	$(MAKE) -f CMakeFiles/adj_matrix.dir/build.make CMakeFiles/adj_matrix.dir/build
-.PHONY : adj_matrix/fast
+stack_test/fast:
+	$(MAKE) -f CMakeFiles/stack_test.dir/build.make CMakeFiles/stack_test.dir/build
+.PHONY : stack_test/fast
 
-#=============================================================================
-# Target rules for targets named kruskall
+color.o: color.cpp.o
 
-# Build rule for target.
-kruskall: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 kruskall
-.PHONY : kruskall
-
-# fast build rule for target.
-kruskall/fast:
-	$(MAKE) -f CMakeFiles/kruskall.dir/build.make CMakeFiles/kruskall.dir/build
-.PHONY : kruskall/fast
-
-#=============================================================================
-# Target rules for targets named dijikstra_adjlist
-
-# Build rule for target.
-dijikstra_adjlist: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 dijikstra_adjlist
-.PHONY : dijikstra_adjlist
-
-# fast build rule for target.
-dijikstra_adjlist/fast:
-	$(MAKE) -f CMakeFiles/dijikstra_adjlist.dir/build.make CMakeFiles/dijikstra_adjlist.dir/build
-.PHONY : dijikstra_adjlist/fast
-
-adj_list_test.o: adj_list_test.cpp.o
-
-.PHONY : adj_list_test.o
+.PHONY : color.o
 
 # target to build an object file
-adj_list_test.cpp.o:
-	$(MAKE) -f CMakeFiles/adj_list.dir/build.make CMakeFiles/adj_list.dir/adj_list_test.cpp.o
-.PHONY : adj_list_test.cpp.o
+color.cpp.o:
+	$(MAKE) -f CMakeFiles/color.dir/build.make CMakeFiles/color.dir/color.cpp.o
+.PHONY : color.cpp.o
 
-adj_list_test.i: adj_list_test.cpp.i
+color.i: color.cpp.i
 
-.PHONY : adj_list_test.i
-
-# target to preprocess a source file
-adj_list_test.cpp.i:
-	$(MAKE) -f CMakeFiles/adj_list.dir/build.make CMakeFiles/adj_list.dir/adj_list_test.cpp.i
-.PHONY : adj_list_test.cpp.i
-
-adj_list_test.s: adj_list_test.cpp.s
-
-.PHONY : adj_list_test.s
-
-# target to generate assembly for a file
-adj_list_test.cpp.s:
-	$(MAKE) -f CMakeFiles/adj_list.dir/build.make CMakeFiles/adj_list.dir/adj_list_test.cpp.s
-.PHONY : adj_list_test.cpp.s
-
-adj_matrix_test.o: adj_matrix_test.cpp.o
-
-.PHONY : adj_matrix_test.o
-
-# target to build an object file
-adj_matrix_test.cpp.o:
-	$(MAKE) -f CMakeFiles/adj_matrix.dir/build.make CMakeFiles/adj_matrix.dir/adj_matrix_test.cpp.o
-.PHONY : adj_matrix_test.cpp.o
-
-adj_matrix_test.i: adj_matrix_test.cpp.i
-
-.PHONY : adj_matrix_test.i
+.PHONY : color.i
 
 # target to preprocess a source file
-adj_matrix_test.cpp.i:
-	$(MAKE) -f CMakeFiles/adj_matrix.dir/build.make CMakeFiles/adj_matrix.dir/adj_matrix_test.cpp.i
-.PHONY : adj_matrix_test.cpp.i
+color.cpp.i:
+	$(MAKE) -f CMakeFiles/color.dir/build.make CMakeFiles/color.dir/color.cpp.i
+.PHONY : color.cpp.i
 
-adj_matrix_test.s: adj_matrix_test.cpp.s
+color.s: color.cpp.s
 
-.PHONY : adj_matrix_test.s
-
-# target to generate assembly for a file
-adj_matrix_test.cpp.s:
-	$(MAKE) -f CMakeFiles/adj_matrix.dir/build.make CMakeFiles/adj_matrix.dir/adj_matrix_test.cpp.s
-.PHONY : adj_matrix_test.cpp.s
-
-binary_tree_test.o: binary_tree_test.cpp.o
-
-.PHONY : binary_tree_test.o
-
-# target to build an object file
-binary_tree_test.cpp.o:
-	$(MAKE) -f CMakeFiles/binary_tree.dir/build.make CMakeFiles/binary_tree.dir/binary_tree_test.cpp.o
-.PHONY : binary_tree_test.cpp.o
-
-binary_tree_test.i: binary_tree_test.cpp.i
-
-.PHONY : binary_tree_test.i
-
-# target to preprocess a source file
-binary_tree_test.cpp.i:
-	$(MAKE) -f CMakeFiles/binary_tree.dir/build.make CMakeFiles/binary_tree.dir/binary_tree_test.cpp.i
-.PHONY : binary_tree_test.cpp.i
-
-binary_tree_test.s: binary_tree_test.cpp.s
-
-.PHONY : binary_tree_test.s
+.PHONY : color.s
 
 # target to generate assembly for a file
-binary_tree_test.cpp.s:
-	$(MAKE) -f CMakeFiles/binary_tree.dir/build.make CMakeFiles/binary_tree.dir/binary_tree_test.cpp.s
-.PHONY : binary_tree_test.cpp.s
+color.cpp.s:
+	$(MAKE) -f CMakeFiles/color.dir/build.make CMakeFiles/color.dir/color.cpp.s
+.PHONY : color.cpp.s
 
 dijikstra.o: dijikstra.cpp.o
 
@@ -348,167 +216,59 @@ dijikstra.cpp.s:
 	$(MAKE) -f CMakeFiles/dijikstra.dir/build.make CMakeFiles/dijikstra.dir/dijikstra.cpp.s
 .PHONY : dijikstra.cpp.s
 
-dijikstra_adjlist.o: dijikstra_adjlist.cpp.o
+stack_test.o: stack_test.cpp.o
 
-.PHONY : dijikstra_adjlist.o
-
-# target to build an object file
-dijikstra_adjlist.cpp.o:
-	$(MAKE) -f CMakeFiles/dijikstra_adjlist.dir/build.make CMakeFiles/dijikstra_adjlist.dir/dijikstra_adjlist.cpp.o
-.PHONY : dijikstra_adjlist.cpp.o
-
-dijikstra_adjlist.i: dijikstra_adjlist.cpp.i
-
-.PHONY : dijikstra_adjlist.i
-
-# target to preprocess a source file
-dijikstra_adjlist.cpp.i:
-	$(MAKE) -f CMakeFiles/dijikstra_adjlist.dir/build.make CMakeFiles/dijikstra_adjlist.dir/dijikstra_adjlist.cpp.i
-.PHONY : dijikstra_adjlist.cpp.i
-
-dijikstra_adjlist.s: dijikstra_adjlist.cpp.s
-
-.PHONY : dijikstra_adjlist.s
-
-# target to generate assembly for a file
-dijikstra_adjlist.cpp.s:
-	$(MAKE) -f CMakeFiles/dijikstra_adjlist.dir/build.make CMakeFiles/dijikstra_adjlist.dir/dijikstra_adjlist.cpp.s
-.PHONY : dijikstra_adjlist.cpp.s
-
-graph_test.o: graph_test.cpp.o
-
-.PHONY : graph_test.o
+.PHONY : stack_test.o
 
 # target to build an object file
-graph_test.cpp.o:
-	$(MAKE) -f CMakeFiles/graph.dir/build.make CMakeFiles/graph.dir/graph_test.cpp.o
-.PHONY : graph_test.cpp.o
+stack_test.cpp.o:
+	$(MAKE) -f CMakeFiles/stack_test.dir/build.make CMakeFiles/stack_test.dir/stack_test.cpp.o
+.PHONY : stack_test.cpp.o
 
-graph_test.i: graph_test.cpp.i
+stack_test.i: stack_test.cpp.i
 
-.PHONY : graph_test.i
+.PHONY : stack_test.i
 
 # target to preprocess a source file
-graph_test.cpp.i:
-	$(MAKE) -f CMakeFiles/graph.dir/build.make CMakeFiles/graph.dir/graph_test.cpp.i
-.PHONY : graph_test.cpp.i
+stack_test.cpp.i:
+	$(MAKE) -f CMakeFiles/stack_test.dir/build.make CMakeFiles/stack_test.dir/stack_test.cpp.i
+.PHONY : stack_test.cpp.i
 
-graph_test.s: graph_test.cpp.s
+stack_test.s: stack_test.cpp.s
 
-.PHONY : graph_test.s
+.PHONY : stack_test.s
 
 # target to generate assembly for a file
-graph_test.cpp.s:
-	$(MAKE) -f CMakeFiles/graph.dir/build.make CMakeFiles/graph.dir/graph_test.cpp.s
-.PHONY : graph_test.cpp.s
+stack_test.cpp.s:
+	$(MAKE) -f CMakeFiles/stack_test.dir/build.make CMakeFiles/stack_test.dir/stack_test.cpp.s
+.PHONY : stack_test.cpp.s
 
-heap_test.o: heap_test.cpp.o
+topological_sort.o: topological_sort.cpp.o
 
-.PHONY : heap_test.o
+.PHONY : topological_sort.o
 
 # target to build an object file
-heap_test.cpp.o:
-	$(MAKE) -f CMakeFiles/heap.dir/build.make CMakeFiles/heap.dir/heap_test.cpp.o
-.PHONY : heap_test.cpp.o
+topological_sort.cpp.o:
+	$(MAKE) -f CMakeFiles/topological_sort.dir/build.make CMakeFiles/topological_sort.dir/topological_sort.cpp.o
+.PHONY : topological_sort.cpp.o
 
-heap_test.i: heap_test.cpp.i
+topological_sort.i: topological_sort.cpp.i
 
-.PHONY : heap_test.i
-
-# target to preprocess a source file
-heap_test.cpp.i:
-	$(MAKE) -f CMakeFiles/heap.dir/build.make CMakeFiles/heap.dir/heap_test.cpp.i
-.PHONY : heap_test.cpp.i
-
-heap_test.s: heap_test.cpp.s
-
-.PHONY : heap_test.s
-
-# target to generate assembly for a file
-heap_test.cpp.s:
-	$(MAKE) -f CMakeFiles/heap.dir/build.make CMakeFiles/heap.dir/heap_test.cpp.s
-.PHONY : heap_test.cpp.s
-
-kruskall.o: kruskall.cpp.o
-
-.PHONY : kruskall.o
-
-# target to build an object file
-kruskall.cpp.o:
-	$(MAKE) -f CMakeFiles/kruskall.dir/build.make CMakeFiles/kruskall.dir/kruskall.cpp.o
-.PHONY : kruskall.cpp.o
-
-kruskall.i: kruskall.cpp.i
-
-.PHONY : kruskall.i
+.PHONY : topological_sort.i
 
 # target to preprocess a source file
-kruskall.cpp.i:
-	$(MAKE) -f CMakeFiles/kruskall.dir/build.make CMakeFiles/kruskall.dir/kruskall.cpp.i
-.PHONY : kruskall.cpp.i
+topological_sort.cpp.i:
+	$(MAKE) -f CMakeFiles/topological_sort.dir/build.make CMakeFiles/topological_sort.dir/topological_sort.cpp.i
+.PHONY : topological_sort.cpp.i
 
-kruskall.s: kruskall.cpp.s
+topological_sort.s: topological_sort.cpp.s
 
-.PHONY : kruskall.s
-
-# target to generate assembly for a file
-kruskall.cpp.s:
-	$(MAKE) -f CMakeFiles/kruskall.dir/build.make CMakeFiles/kruskall.dir/kruskall.cpp.s
-.PHONY : kruskall.cpp.s
-
-linked_list_test.o: linked_list_test.cpp.o
-
-.PHONY : linked_list_test.o
-
-# target to build an object file
-linked_list_test.cpp.o:
-	$(MAKE) -f CMakeFiles/linked_list.dir/build.make CMakeFiles/linked_list.dir/linked_list_test.cpp.o
-.PHONY : linked_list_test.cpp.o
-
-linked_list_test.i: linked_list_test.cpp.i
-
-.PHONY : linked_list_test.i
-
-# target to preprocess a source file
-linked_list_test.cpp.i:
-	$(MAKE) -f CMakeFiles/linked_list.dir/build.make CMakeFiles/linked_list.dir/linked_list_test.cpp.i
-.PHONY : linked_list_test.cpp.i
-
-linked_list_test.s: linked_list_test.cpp.s
-
-.PHONY : linked_list_test.s
+.PHONY : topological_sort.s
 
 # target to generate assembly for a file
-linked_list_test.cpp.s:
-	$(MAKE) -f CMakeFiles/linked_list.dir/build.make CMakeFiles/linked_list.dir/linked_list_test.cpp.s
-.PHONY : linked_list_test.cpp.s
-
-prim.o: prim.cpp.o
-
-.PHONY : prim.o
-
-# target to build an object file
-prim.cpp.o:
-	$(MAKE) -f CMakeFiles/prim.dir/build.make CMakeFiles/prim.dir/prim.cpp.o
-.PHONY : prim.cpp.o
-
-prim.i: prim.cpp.i
-
-.PHONY : prim.i
-
-# target to preprocess a source file
-prim.cpp.i:
-	$(MAKE) -f CMakeFiles/prim.dir/build.make CMakeFiles/prim.dir/prim.cpp.i
-.PHONY : prim.cpp.i
-
-prim.s: prim.cpp.s
-
-.PHONY : prim.s
-
-# target to generate assembly for a file
-prim.cpp.s:
-	$(MAKE) -f CMakeFiles/prim.dir/build.make CMakeFiles/prim.dir/prim.cpp.s
-.PHONY : prim.cpp.s
+topological_sort.cpp.s:
+	$(MAKE) -f CMakeFiles/topological_sort.dir/build.make CMakeFiles/topological_sort.dir/topological_sort.cpp.s
+.PHONY : topological_sort.cpp.s
 
 # Help Target
 help:
@@ -517,47 +277,23 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... heap"
-	@echo "... graph"
-	@echo "... adj_list"
-	@echo "... linked_list"
-	@echo "... dijikstra"
 	@echo "... edit_cache"
-	@echo "... prim"
-	@echo "... binary_tree"
-	@echo "... adj_matrix"
-	@echo "... kruskall"
-	@echo "... dijikstra_adjlist"
-	@echo "... adj_list_test.o"
-	@echo "... adj_list_test.i"
-	@echo "... adj_list_test.s"
-	@echo "... adj_matrix_test.o"
-	@echo "... adj_matrix_test.i"
-	@echo "... adj_matrix_test.s"
-	@echo "... binary_tree_test.o"
-	@echo "... binary_tree_test.i"
-	@echo "... binary_tree_test.s"
+	@echo "... dijikstra"
+	@echo "... topological_sort"
+	@echo "... color"
+	@echo "... stack_test"
+	@echo "... color.o"
+	@echo "... color.i"
+	@echo "... color.s"
 	@echo "... dijikstra.o"
 	@echo "... dijikstra.i"
 	@echo "... dijikstra.s"
-	@echo "... dijikstra_adjlist.o"
-	@echo "... dijikstra_adjlist.i"
-	@echo "... dijikstra_adjlist.s"
-	@echo "... graph_test.o"
-	@echo "... graph_test.i"
-	@echo "... graph_test.s"
-	@echo "... heap_test.o"
-	@echo "... heap_test.i"
-	@echo "... heap_test.s"
-	@echo "... kruskall.o"
-	@echo "... kruskall.i"
-	@echo "... kruskall.s"
-	@echo "... linked_list_test.o"
-	@echo "... linked_list_test.i"
-	@echo "... linked_list_test.s"
-	@echo "... prim.o"
-	@echo "... prim.i"
-	@echo "... prim.s"
+	@echo "... stack_test.o"
+	@echo "... stack_test.i"
+	@echo "... stack_test.s"
+	@echo "... topological_sort.o"
+	@echo "... topological_sort.i"
+	@echo "... topological_sort.s"
 .PHONY : help
 
 

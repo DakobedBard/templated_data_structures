@@ -61,6 +61,7 @@ int printSolution(int dist[], int n){
 
 
 
+
 void adjmatrix_dijikstra(int graph[V][V], int src){
 	
 	
@@ -107,7 +108,18 @@ class HeapNode{
 		v=0;
 		dist = INT_MAX;
 	}
+
+	HeapNode(int c){
+
+	}
 	
+
+	void decreaseDist(MinHeap<HeapNode> *heap, int v, int dist){
+
+		int index = heap->pos;
+
+	}
+
 	bool operator <(const HeapNode &h2){
 		return this->dist < h2.dist;
 	}
@@ -154,19 +166,109 @@ void adjlist_dijikstra(AdjList_Graph *graph, int src){
 		
 	}
 
+	int size = minheap->getsize();
+	std::cout << "The size of the minheap is " << size << std::endl;
+	HeapNode min_node = minheap->delete_min();
+	min_node = minheap->delete_min();
+	std::cout << "The minimum element is " << min_node << std::endl;
 
 	minheap->print_minheap();
 
-	//HeapNode *src_node = new HeapNode(list[src], 0);
+	HeapNode *src_node = new HeapNode(src, 0);
 
 	
-		
+	//minheap->decreaseKey(src,dist[src]);		
+
 	
 	// Iterate through the vertices...
 
+}
+
+void printArr(int dist[], int n){
+
+	for(int i =0; i < n; ++i){
+
+		std::cout << "Vertex Distance from source " << std::endl;
+		std::cout << i << "\t\t" << dist[i] << std::endl;
+	}
+
+}
+
+
+/*
+
+We have implemented BellmanFord for our basic Graph implementation, which is simply a set of edges..
+
+
+
+*/
+
+
+void BellmanFord(Graph *graph, int src){
+	int numvertices = graph->NumVertices;
+	int numedges = graph->E;
+
+	int dist[numvertices];
+
+	// Initialize distances from src to all other vertices as INFINITE
+
+	for(int i=0; i < numvertices; i++){
+		dist[i] = INT_MAX;
+	}
+	dist[src] = 0;
+
+	for(int i =1; i < numvertices -1; i++){
+		for(int j =0; j < numedges; j++){
+			int u = graph->get_src(j);
+			int v = graph->get_dest(j);
+			int weight = graph->get_weight(j);
+			if(dist[u] != INT_MAX && dist[u] + weight < dist[v])
+				dist[v] = dist[u] + weight;
+		}
+	}
+
+
+	// Step 3:  Check for negative-weight cycles.  The above step guarantees shortest distances if graph doesn't contain negative weight cycles.  If we get a shorter path, then there is 		// a cycle
+
+	for(int j =0; j < numedges; j++){
+		int u = graph->get_src(j);
+		int v = graph->get_dest(j);
+		int weight = graph->get_weight(j);
+		if(dist[u] != INT_MAX && dist[u] + weight < dist[v])
+			printf("graph contains negative weight cycle\n");
+
+	}
+
+	printArr(dist, numvertices);
+	
+}
+
+/*
+
+This looks a little bit convoluted....
+
+We are going to loop through all of the vertices... and within this loop we will loop 
+
+
+
+*/
+
+void BellmanFord_List(AdjList_Graph *graph, int src){
+
+	int numVertices = graph->getV();
+	int E = graph->number_of_edges();
+	int dist[numVertices];
+
+	std::cout << "The number of edges for this graph is : " <<E << std::endl;
+	//for(int i =0; i < numVertices ; i ++){
+
+	//}
 
 
 }
+	
+
+
 
 
 

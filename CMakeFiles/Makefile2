@@ -60,161 +60,13 @@ CMAKE_SOURCE_DIR = /home/mddarr/aptitude/data_structures/template_data_structure
 CMAKE_BINARY_DIR = /home/mddarr/aptitude/data_structures/template_data_structures
 
 #=============================================================================
-# Target rules for target CMakeFiles/heap.dir
-
-# All Build rule for target.
-CMakeFiles/heap.dir/all:
-	$(MAKE) -f CMakeFiles/heap.dir/build.make CMakeFiles/heap.dir/depend
-	$(MAKE) -f CMakeFiles/heap.dir/build.make CMakeFiles/heap.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mddarr/aptitude/data_structures/template_data_structures/CMakeFiles --progress-num=13,14 "Built target heap"
-.PHONY : CMakeFiles/heap.dir/all
-
-# Include target in all.
-all: CMakeFiles/heap.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/heap.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mddarr/aptitude/data_structures/template_data_structures/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/heap.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mddarr/aptitude/data_structures/template_data_structures/CMakeFiles 0
-.PHONY : CMakeFiles/heap.dir/rule
-
-# Convenience name for target.
-heap: CMakeFiles/heap.dir/rule
-
-.PHONY : heap
-
-# clean rule for target.
-CMakeFiles/heap.dir/clean:
-	$(MAKE) -f CMakeFiles/heap.dir/build.make CMakeFiles/heap.dir/clean
-.PHONY : CMakeFiles/heap.dir/clean
-
-# clean rule for target.
-clean: CMakeFiles/heap.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/graph.dir
-
-# All Build rule for target.
-CMakeFiles/graph.dir/all:
-	$(MAKE) -f CMakeFiles/graph.dir/build.make CMakeFiles/graph.dir/depend
-	$(MAKE) -f CMakeFiles/graph.dir/build.make CMakeFiles/graph.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mddarr/aptitude/data_structures/template_data_structures/CMakeFiles --progress-num=11,12 "Built target graph"
-.PHONY : CMakeFiles/graph.dir/all
-
-# Include target in all.
-all: CMakeFiles/graph.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/graph.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mddarr/aptitude/data_structures/template_data_structures/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/graph.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mddarr/aptitude/data_structures/template_data_structures/CMakeFiles 0
-.PHONY : CMakeFiles/graph.dir/rule
-
-# Convenience name for target.
-graph: CMakeFiles/graph.dir/rule
-
-.PHONY : graph
-
-# clean rule for target.
-CMakeFiles/graph.dir/clean:
-	$(MAKE) -f CMakeFiles/graph.dir/build.make CMakeFiles/graph.dir/clean
-.PHONY : CMakeFiles/graph.dir/clean
-
-# clean rule for target.
-clean: CMakeFiles/graph.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/adj_list.dir
-
-# All Build rule for target.
-CMakeFiles/adj_list.dir/all:
-	$(MAKE) -f CMakeFiles/adj_list.dir/build.make CMakeFiles/adj_list.dir/depend
-	$(MAKE) -f CMakeFiles/adj_list.dir/build.make CMakeFiles/adj_list.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mddarr/aptitude/data_structures/template_data_structures/CMakeFiles --progress-num=1,2 "Built target adj_list"
-.PHONY : CMakeFiles/adj_list.dir/all
-
-# Include target in all.
-all: CMakeFiles/adj_list.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/adj_list.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mddarr/aptitude/data_structures/template_data_structures/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/adj_list.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mddarr/aptitude/data_structures/template_data_structures/CMakeFiles 0
-.PHONY : CMakeFiles/adj_list.dir/rule
-
-# Convenience name for target.
-adj_list: CMakeFiles/adj_list.dir/rule
-
-.PHONY : adj_list
-
-# clean rule for target.
-CMakeFiles/adj_list.dir/clean:
-	$(MAKE) -f CMakeFiles/adj_list.dir/build.make CMakeFiles/adj_list.dir/clean
-.PHONY : CMakeFiles/adj_list.dir/clean
-
-# clean rule for target.
-clean: CMakeFiles/adj_list.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/linked_list.dir
-
-# All Build rule for target.
-CMakeFiles/linked_list.dir/all:
-	$(MAKE) -f CMakeFiles/linked_list.dir/build.make CMakeFiles/linked_list.dir/depend
-	$(MAKE) -f CMakeFiles/linked_list.dir/build.make CMakeFiles/linked_list.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mddarr/aptitude/data_structures/template_data_structures/CMakeFiles --progress-num=17,18 "Built target linked_list"
-.PHONY : CMakeFiles/linked_list.dir/all
-
-# Include target in all.
-all: CMakeFiles/linked_list.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/linked_list.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mddarr/aptitude/data_structures/template_data_structures/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/linked_list.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mddarr/aptitude/data_structures/template_data_structures/CMakeFiles 0
-.PHONY : CMakeFiles/linked_list.dir/rule
-
-# Convenience name for target.
-linked_list: CMakeFiles/linked_list.dir/rule
-
-.PHONY : linked_list
-
-# clean rule for target.
-CMakeFiles/linked_list.dir/clean:
-	$(MAKE) -f CMakeFiles/linked_list.dir/build.make CMakeFiles/linked_list.dir/clean
-.PHONY : CMakeFiles/linked_list.dir/clean
-
-# clean rule for target.
-clean: CMakeFiles/linked_list.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
 # Target rules for target CMakeFiles/dijikstra.dir
 
 # All Build rule for target.
 CMakeFiles/dijikstra.dir/all:
 	$(MAKE) -f CMakeFiles/dijikstra.dir/build.make CMakeFiles/dijikstra.dir/depend
 	$(MAKE) -f CMakeFiles/dijikstra.dir/build.make CMakeFiles/dijikstra.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mddarr/aptitude/data_structures/template_data_structures/CMakeFiles --progress-num=7,8 "Built target dijikstra"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mddarr/aptitude/data_structures/template_data_structures/CMakeFiles --progress-num=3,4 "Built target dijikstra"
 .PHONY : CMakeFiles/dijikstra.dir/all
 
 # Include target in all.
@@ -245,187 +97,113 @@ clean: CMakeFiles/dijikstra.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/prim.dir
+# Target rules for target CMakeFiles/topological_sort.dir
 
 # All Build rule for target.
-CMakeFiles/prim.dir/all:
-	$(MAKE) -f CMakeFiles/prim.dir/build.make CMakeFiles/prim.dir/depend
-	$(MAKE) -f CMakeFiles/prim.dir/build.make CMakeFiles/prim.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mddarr/aptitude/data_structures/template_data_structures/CMakeFiles --progress-num=19,20 "Built target prim"
-.PHONY : CMakeFiles/prim.dir/all
+CMakeFiles/topological_sort.dir/all:
+	$(MAKE) -f CMakeFiles/topological_sort.dir/build.make CMakeFiles/topological_sort.dir/depend
+	$(MAKE) -f CMakeFiles/topological_sort.dir/build.make CMakeFiles/topological_sort.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mddarr/aptitude/data_structures/template_data_structures/CMakeFiles --progress-num=7,8 "Built target topological_sort"
+.PHONY : CMakeFiles/topological_sort.dir/all
 
 # Include target in all.
-all: CMakeFiles/prim.dir/all
+all: CMakeFiles/topological_sort.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/prim.dir/rule: cmake_check_build_system
+CMakeFiles/topological_sort.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mddarr/aptitude/data_structures/template_data_structures/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/prim.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/topological_sort.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mddarr/aptitude/data_structures/template_data_structures/CMakeFiles 0
-.PHONY : CMakeFiles/prim.dir/rule
+.PHONY : CMakeFiles/topological_sort.dir/rule
 
 # Convenience name for target.
-prim: CMakeFiles/prim.dir/rule
+topological_sort: CMakeFiles/topological_sort.dir/rule
 
-.PHONY : prim
-
-# clean rule for target.
-CMakeFiles/prim.dir/clean:
-	$(MAKE) -f CMakeFiles/prim.dir/build.make CMakeFiles/prim.dir/clean
-.PHONY : CMakeFiles/prim.dir/clean
+.PHONY : topological_sort
 
 # clean rule for target.
-clean: CMakeFiles/prim.dir/clean
+CMakeFiles/topological_sort.dir/clean:
+	$(MAKE) -f CMakeFiles/topological_sort.dir/build.make CMakeFiles/topological_sort.dir/clean
+.PHONY : CMakeFiles/topological_sort.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/topological_sort.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/binary_tree.dir
+# Target rules for target CMakeFiles/color.dir
 
 # All Build rule for target.
-CMakeFiles/binary_tree.dir/all:
-	$(MAKE) -f CMakeFiles/binary_tree.dir/build.make CMakeFiles/binary_tree.dir/depend
-	$(MAKE) -f CMakeFiles/binary_tree.dir/build.make CMakeFiles/binary_tree.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mddarr/aptitude/data_structures/template_data_structures/CMakeFiles --progress-num=5,6 "Built target binary_tree"
-.PHONY : CMakeFiles/binary_tree.dir/all
+CMakeFiles/color.dir/all:
+	$(MAKE) -f CMakeFiles/color.dir/build.make CMakeFiles/color.dir/depend
+	$(MAKE) -f CMakeFiles/color.dir/build.make CMakeFiles/color.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mddarr/aptitude/data_structures/template_data_structures/CMakeFiles --progress-num=1,2 "Built target color"
+.PHONY : CMakeFiles/color.dir/all
 
 # Include target in all.
-all: CMakeFiles/binary_tree.dir/all
+all: CMakeFiles/color.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/binary_tree.dir/rule: cmake_check_build_system
+CMakeFiles/color.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mddarr/aptitude/data_structures/template_data_structures/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/binary_tree.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/color.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mddarr/aptitude/data_structures/template_data_structures/CMakeFiles 0
-.PHONY : CMakeFiles/binary_tree.dir/rule
+.PHONY : CMakeFiles/color.dir/rule
 
 # Convenience name for target.
-binary_tree: CMakeFiles/binary_tree.dir/rule
+color: CMakeFiles/color.dir/rule
 
-.PHONY : binary_tree
-
-# clean rule for target.
-CMakeFiles/binary_tree.dir/clean:
-	$(MAKE) -f CMakeFiles/binary_tree.dir/build.make CMakeFiles/binary_tree.dir/clean
-.PHONY : CMakeFiles/binary_tree.dir/clean
+.PHONY : color
 
 # clean rule for target.
-clean: CMakeFiles/binary_tree.dir/clean
+CMakeFiles/color.dir/clean:
+	$(MAKE) -f CMakeFiles/color.dir/build.make CMakeFiles/color.dir/clean
+.PHONY : CMakeFiles/color.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/color.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/adj_matrix.dir
+# Target rules for target CMakeFiles/stack_test.dir
 
 # All Build rule for target.
-CMakeFiles/adj_matrix.dir/all:
-	$(MAKE) -f CMakeFiles/adj_matrix.dir/build.make CMakeFiles/adj_matrix.dir/depend
-	$(MAKE) -f CMakeFiles/adj_matrix.dir/build.make CMakeFiles/adj_matrix.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mddarr/aptitude/data_structures/template_data_structures/CMakeFiles --progress-num=3,4 "Built target adj_matrix"
-.PHONY : CMakeFiles/adj_matrix.dir/all
+CMakeFiles/stack_test.dir/all:
+	$(MAKE) -f CMakeFiles/stack_test.dir/build.make CMakeFiles/stack_test.dir/depend
+	$(MAKE) -f CMakeFiles/stack_test.dir/build.make CMakeFiles/stack_test.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mddarr/aptitude/data_structures/template_data_structures/CMakeFiles --progress-num=5,6 "Built target stack_test"
+.PHONY : CMakeFiles/stack_test.dir/all
 
 # Include target in all.
-all: CMakeFiles/adj_matrix.dir/all
+all: CMakeFiles/stack_test.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/adj_matrix.dir/rule: cmake_check_build_system
+CMakeFiles/stack_test.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mddarr/aptitude/data_structures/template_data_structures/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/adj_matrix.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/stack_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mddarr/aptitude/data_structures/template_data_structures/CMakeFiles 0
-.PHONY : CMakeFiles/adj_matrix.dir/rule
+.PHONY : CMakeFiles/stack_test.dir/rule
 
 # Convenience name for target.
-adj_matrix: CMakeFiles/adj_matrix.dir/rule
+stack_test: CMakeFiles/stack_test.dir/rule
 
-.PHONY : adj_matrix
-
-# clean rule for target.
-CMakeFiles/adj_matrix.dir/clean:
-	$(MAKE) -f CMakeFiles/adj_matrix.dir/build.make CMakeFiles/adj_matrix.dir/clean
-.PHONY : CMakeFiles/adj_matrix.dir/clean
+.PHONY : stack_test
 
 # clean rule for target.
-clean: CMakeFiles/adj_matrix.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/kruskall.dir
-
-# All Build rule for target.
-CMakeFiles/kruskall.dir/all:
-	$(MAKE) -f CMakeFiles/kruskall.dir/build.make CMakeFiles/kruskall.dir/depend
-	$(MAKE) -f CMakeFiles/kruskall.dir/build.make CMakeFiles/kruskall.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mddarr/aptitude/data_structures/template_data_structures/CMakeFiles --progress-num=15,16 "Built target kruskall"
-.PHONY : CMakeFiles/kruskall.dir/all
-
-# Include target in all.
-all: CMakeFiles/kruskall.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/kruskall.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mddarr/aptitude/data_structures/template_data_structures/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/kruskall.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mddarr/aptitude/data_structures/template_data_structures/CMakeFiles 0
-.PHONY : CMakeFiles/kruskall.dir/rule
-
-# Convenience name for target.
-kruskall: CMakeFiles/kruskall.dir/rule
-
-.PHONY : kruskall
+CMakeFiles/stack_test.dir/clean:
+	$(MAKE) -f CMakeFiles/stack_test.dir/build.make CMakeFiles/stack_test.dir/clean
+.PHONY : CMakeFiles/stack_test.dir/clean
 
 # clean rule for target.
-CMakeFiles/kruskall.dir/clean:
-	$(MAKE) -f CMakeFiles/kruskall.dir/build.make CMakeFiles/kruskall.dir/clean
-.PHONY : CMakeFiles/kruskall.dir/clean
-
-# clean rule for target.
-clean: CMakeFiles/kruskall.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/dijikstra_adjlist.dir
-
-# All Build rule for target.
-CMakeFiles/dijikstra_adjlist.dir/all:
-	$(MAKE) -f CMakeFiles/dijikstra_adjlist.dir/build.make CMakeFiles/dijikstra_adjlist.dir/depend
-	$(MAKE) -f CMakeFiles/dijikstra_adjlist.dir/build.make CMakeFiles/dijikstra_adjlist.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mddarr/aptitude/data_structures/template_data_structures/CMakeFiles --progress-num=9,10 "Built target dijikstra_adjlist"
-.PHONY : CMakeFiles/dijikstra_adjlist.dir/all
-
-# Include target in all.
-all: CMakeFiles/dijikstra_adjlist.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/dijikstra_adjlist.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mddarr/aptitude/data_structures/template_data_structures/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/dijikstra_adjlist.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mddarr/aptitude/data_structures/template_data_structures/CMakeFiles 0
-.PHONY : CMakeFiles/dijikstra_adjlist.dir/rule
-
-# Convenience name for target.
-dijikstra_adjlist: CMakeFiles/dijikstra_adjlist.dir/rule
-
-.PHONY : dijikstra_adjlist
-
-# clean rule for target.
-CMakeFiles/dijikstra_adjlist.dir/clean:
-	$(MAKE) -f CMakeFiles/dijikstra_adjlist.dir/build.make CMakeFiles/dijikstra_adjlist.dir/clean
-.PHONY : CMakeFiles/dijikstra_adjlist.dir/clean
-
-# clean rule for target.
-clean: CMakeFiles/dijikstra_adjlist.dir/clean
+clean: CMakeFiles/stack_test.dir/clean
 
 .PHONY : clean
 

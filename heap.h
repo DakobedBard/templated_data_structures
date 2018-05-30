@@ -13,6 +13,9 @@ Things to do:
 
 	Heap Sort
 
+
+	Decrease key...
+
 */
 
 
@@ -27,14 +30,17 @@ class MinHeap{
 	std::vector<DataType> array;
 
   public:
-
+	int pos;
 	MinHeap(int capacity_):capacity(capacity_){
 		std::vector<DataType>* arr = new std::vector<DataType>(capacity);
 
-		array = *arr;;
+		array = *arr;
+		pos =0;
 	}
 
-
+	int getsize(){
+		return heap_size;
+	}
 
 
 	// Heapify a subtree with root at given index
@@ -155,6 +161,8 @@ The implementation in the book uses a while loop to percolate the hole down whil
 	
 
 	}
+
+
 
 	void swap(DataType *x, DataType *y){
 		DataType temp = *x;

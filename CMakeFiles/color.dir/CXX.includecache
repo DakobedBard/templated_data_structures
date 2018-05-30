@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/mddarr/aptitude/data_structures/template_data_structures/color.cpp
+graph.h
+/home/mddarr/aptitude/data_structures/template_data_structures/graph.h
+iostream
+-
+
+/home/mddarr/aptitude/data_structures/template_data_structures/graph.h
+iostream
+-
+vector
+-
+unordered_map
+-
+list
+-
+stack
+-
+
