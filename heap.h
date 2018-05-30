@@ -2,6 +2,22 @@
 #include <vector>
 #include <climits>
 #include <iostream>
+
+/*
+
+Temoplated Min heap implementation.
+
+
+
+Things to do:
+
+	Heap Sort
+
+*/
+
+
+
+
 template <class DataType>
 class MinHeap{
   private:
@@ -13,7 +29,7 @@ class MinHeap{
   public:
 
 	MinHeap(int capacity_):capacity(capacity_){
-		std::vector<DataType>* arr = new std::vector<DataType>(capacity,0);
+		std::vector<DataType>* arr = new std::vector<DataType>(capacity);
 
 		array = *arr;;
 	}

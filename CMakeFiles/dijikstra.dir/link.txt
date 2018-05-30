@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/dijikstra.dir/dijikstra.cpp.o  -o dijikstra 

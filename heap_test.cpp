@@ -1,5 +1,15 @@
+
 #include "heap.h"
 #include <iostream>
+
+class HeapNode{
+	int v;
+	int dist;
+
+  public:
+	HeapNode(int v_, int dist_):v(v_), dist(dist_){}
+};
+
 
 int main(){
 	

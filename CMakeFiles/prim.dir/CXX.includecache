@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/mddarr/aptitude/data_structures/template_data_structures/graph.h
+iostream
+-
+vector
+-
+unordered_map
+-
+list
+-
+
+/home/mddarr/aptitude/data_structures/template_data_structures/heap.h
+vector
+-
+climits
+-
+iostream
+-
+
+/home/mddarr/aptitude/data_structures/template_data_structures/prim.cpp
+heap.h
+/home/mddarr/aptitude/data_structures/template_data_structures/heap.h
+graph.h
+/home/mddarr/aptitude/data_structures/template_data_structures/graph.h
+limits.h
+-
+

@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/dijikstra_adjlist.dir/dijikstra_adjlist.cpp.o  -o dijikstra_adjlist 

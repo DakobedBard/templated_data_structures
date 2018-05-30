@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/adj_matrix.dir/adj_matrix_test.cpp.o  -o adj_matrix 

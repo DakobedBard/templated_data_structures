@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/adj_list.dir/adj_list_test.cpp.o  -o adj_list 

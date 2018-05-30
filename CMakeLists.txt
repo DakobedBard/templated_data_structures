@@ -17,3 +17,31 @@ set(heap  heap.h heap_test.cpp )
 add_executable(heap ${heap} )
 
 
+set(graph  graph.h graph_test.cpp )
+add_executable(graph ${graph} )
+
+
+set(adj_matrix  graph.h adj_matrix_test.cpp )
+add_executable(adj_matrix ${adj_matrix} )
+
+
+set(adj_list  graph.h adj_list_test.cpp )
+add_executable(adj_list ${adj_list} )
+
+
+set(prim   prim.cpp )
+add_executable(prim ${prim} )
+
+
+set(kruskall   kruskall.cpp )
+add_executable(kruskall ${kruskall} )
+
+
+
+
+set(dijikstra   dijikstra.cpp )
+add_executable(dijikstra ${dijikstra} )
+
+set(dijikstra_adjlist   dijikstra_adjlist.cpp )
+add_executable(dijikstra_adjlist ${dijikstra_adjlist} )
+
