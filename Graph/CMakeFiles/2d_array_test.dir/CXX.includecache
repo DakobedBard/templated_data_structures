@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/mddarr/aptitude/data_structures/template_data_structures/Graph/2d_array_test.cpp
+matrix.h
+/home/mddarr/aptitude/data_structures/template_data_structures/Graph/matrix.h
+
+/home/mddarr/aptitude/data_structures/template_data_structures/Graph/matrix.h
+vector
+-
+

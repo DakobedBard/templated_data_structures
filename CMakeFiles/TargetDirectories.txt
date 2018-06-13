@@ -1,5 +1,7 @@
 /home/mddarr/aptitude/data_structures/template_data_structures/CMakeFiles/rebuild_cache.dir
 /home/mddarr/aptitude/data_structures/template_data_structures/CMakeFiles/edit_cache.dir
+/home/mddarr/aptitude/data_structures/template_data_structures/CMakeFiles/good_vector.dir
+/home/mddarr/aptitude/data_structures/template_data_structures/CMakeFiles/vector.dir
 /home/mddarr/aptitude/data_structures/template_data_structures/CMakeFiles/dijikstra.dir
 /home/mddarr/aptitude/data_structures/template_data_structures/CMakeFiles/topological_sort.dir
 /home/mddarr/aptitude/data_structures/template_data_structures/CMakeFiles/color.dir

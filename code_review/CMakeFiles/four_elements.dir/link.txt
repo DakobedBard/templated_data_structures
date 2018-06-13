@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/four_elements.dir/four_elements.cpp.o  -o four_elements 

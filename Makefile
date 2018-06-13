@@ -111,6 +111,32 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named good_vector
+
+# Build rule for target.
+good_vector: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 good_vector
+.PHONY : good_vector
+
+# fast build rule for target.
+good_vector/fast:
+	$(MAKE) -f CMakeFiles/good_vector.dir/build.make CMakeFiles/good_vector.dir/build
+.PHONY : good_vector/fast
+
+#=============================================================================
+# Target rules for targets named vector
+
+# Build rule for target.
+vector: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 vector
+.PHONY : vector
+
+# fast build rule for target.
+vector/fast:
+	$(MAKE) -f CMakeFiles/vector.dir/build.make CMakeFiles/vector.dir/build
+.PHONY : vector/fast
+
+#=============================================================================
 # Target rules for targets named dijikstra
 
 # Build rule for target.
@@ -216,6 +242,33 @@ dijikstra.cpp.s:
 	$(MAKE) -f CMakeFiles/dijikstra.dir/build.make CMakeFiles/dijikstra.dir/dijikstra.cpp.s
 .PHONY : dijikstra.cpp.s
 
+good_vector_test.o: good_vector_test.cpp.o
+
+.PHONY : good_vector_test.o
+
+# target to build an object file
+good_vector_test.cpp.o:
+	$(MAKE) -f CMakeFiles/good_vector.dir/build.make CMakeFiles/good_vector.dir/good_vector_test.cpp.o
+.PHONY : good_vector_test.cpp.o
+
+good_vector_test.i: good_vector_test.cpp.i
+
+.PHONY : good_vector_test.i
+
+# target to preprocess a source file
+good_vector_test.cpp.i:
+	$(MAKE) -f CMakeFiles/good_vector.dir/build.make CMakeFiles/good_vector.dir/good_vector_test.cpp.i
+.PHONY : good_vector_test.cpp.i
+
+good_vector_test.s: good_vector_test.cpp.s
+
+.PHONY : good_vector_test.s
+
+# target to generate assembly for a file
+good_vector_test.cpp.s:
+	$(MAKE) -f CMakeFiles/good_vector.dir/build.make CMakeFiles/good_vector.dir/good_vector_test.cpp.s
+.PHONY : good_vector_test.cpp.s
+
 stack_test.o: stack_test.cpp.o
 
 .PHONY : stack_test.o
@@ -270,6 +323,33 @@ topological_sort.cpp.s:
 	$(MAKE) -f CMakeFiles/topological_sort.dir/build.make CMakeFiles/topological_sort.dir/topological_sort.cpp.s
 .PHONY : topological_sort.cpp.s
 
+vector_test.o: vector_test.cpp.o
+
+.PHONY : vector_test.o
+
+# target to build an object file
+vector_test.cpp.o:
+	$(MAKE) -f CMakeFiles/vector.dir/build.make CMakeFiles/vector.dir/vector_test.cpp.o
+.PHONY : vector_test.cpp.o
+
+vector_test.i: vector_test.cpp.i
+
+.PHONY : vector_test.i
+
+# target to preprocess a source file
+vector_test.cpp.i:
+	$(MAKE) -f CMakeFiles/vector.dir/build.make CMakeFiles/vector.dir/vector_test.cpp.i
+.PHONY : vector_test.cpp.i
+
+vector_test.s: vector_test.cpp.s
+
+.PHONY : vector_test.s
+
+# target to generate assembly for a file
+vector_test.cpp.s:
+	$(MAKE) -f CMakeFiles/vector.dir/build.make CMakeFiles/vector.dir/vector_test.cpp.s
+.PHONY : vector_test.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -278,6 +358,8 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... good_vector"
+	@echo "... vector"
 	@echo "... dijikstra"
 	@echo "... topological_sort"
 	@echo "... color"
@@ -288,12 +370,18 @@ help:
 	@echo "... dijikstra.o"
 	@echo "... dijikstra.i"
 	@echo "... dijikstra.s"
+	@echo "... good_vector_test.o"
+	@echo "... good_vector_test.i"
+	@echo "... good_vector_test.s"
 	@echo "... stack_test.o"
 	@echo "... stack_test.i"
 	@echo "... stack_test.s"
 	@echo "... topological_sort.o"
 	@echo "... topological_sort.i"
 	@echo "... topological_sort.s"
+	@echo "... vector_test.o"
+	@echo "... vector_test.i"
+	@echo "... vector_test.s"
 .PHONY : help
 
 

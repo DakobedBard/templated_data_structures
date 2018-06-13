@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/mddarr/aptitude/data_structures/template_data_structures/good_vector.h
+memory
+-
+
+/home/mddarr/aptitude/data_structures/template_data_structures/good_vector_test.cpp
+good_vector.h
+/home/mddarr/aptitude/data_structures/template_data_structures/good_vector.h
+

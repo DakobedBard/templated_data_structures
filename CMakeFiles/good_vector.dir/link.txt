@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/good_vector.dir/good_vector_test.cpp.o  -o good_vector 

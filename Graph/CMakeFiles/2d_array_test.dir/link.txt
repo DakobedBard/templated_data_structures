@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/2d_array_test.dir/2d_array_test.cpp.o  -o 2d_array_test 

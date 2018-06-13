@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/mddarr/aptitude/data_structures/template_data_structures/vector.h
+
+/home/mddarr/aptitude/data_structures/template_data_structures/vector_test.cpp
+iostream
+-
+vector.h
+/home/mddarr/aptitude/data_structures/template_data_structures/vector.h
+

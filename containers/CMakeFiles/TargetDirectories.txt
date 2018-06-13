@@ -1,0 +1,3 @@
+/home/mddarr/aptitude/data_structures/template_data_structures/containers/CMakeFiles/rebuild_cache.dir
+/home/mddarr/aptitude/data_structures/template_data_structures/containers/CMakeFiles/edit_cache.dir
+/home/mddarr/aptitude/data_structures/template_data_structures/containers/CMakeFiles/LinkedList.dir

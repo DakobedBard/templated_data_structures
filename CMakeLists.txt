@@ -20,3 +20,8 @@ add_executable(stack_test ${stack} )
 
 set(vector   vector.h vector_test.cpp )
 add_executable(vector ${vector} )
+
+set(good_vector   good_vector.h good_vector_test.cpp )
+add_executable(good_vector ${good_vector} )
+
+
